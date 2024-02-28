@@ -1,0 +1,12 @@
+#code to print positive numbers in a given range
+def print_positive_numbers(values):
+    positive_values = [num for num in values if num > 0]
+    print("Input values:", values)
+    print("Positive numbers in the list:", positive_values)
+
+# Take input values from the user
+input_str = input("Enter values separated by space: ")
+values = [int(x) for x in input_str.split()]
+
+print_positive_numbers(values)
+
